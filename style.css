@@ -1,0 +1,102 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search {
+  width: 95%;
+  margin-top: 10px;
+  padding: 15px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(255,255,255,0.40);
+  border-radius: 10px;
+}
+.search .input {
+  width: 98%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: red;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.input .search-btn {
+  position: absolute;
+  right: 0px;
+  outline:none;
+  border: none;
+  width: 60px;
+  height: 100%;
+  background: #FD8A8A;
+}
+.search input {
+  outline:none;
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding: 0px 60px 0px 17px;
+  font-size: 1rem;
+}
+.image {
+  width: 98%;
+  height: 300px;
+  background: rgba(255,255,255,0.70);
+  margin-top: 6px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.image img {
+  width: 100%;
+  object-fit: cover;
+}
+.buttons {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.buttons button {
+  padding: 11px 35px;
+  outline:none;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  background: #FD8A8A;
+}
+.screen button:active {
+  background: rgba(0,0,0,0.40);
+}
+
+.loader {
+  position: absolute;
+  border: 7px solid #f3f3f3;
+  border-top: 7px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.error {
+  position: absolute;
+}
